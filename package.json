@@ -1,0 +1,34 @@
+{
+  "name": "video-preview-api",
+  "version": "1.0.0",
+  "description": "A high-performance API that generates video previews from Spotify tracks and YouTube videos. Extracts 7-second clips from the middle of videos with customizable quality settings and intelligent caching.",
+  "license": "MIT",
+  "author": "Houloude9IOfficial",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "test": "node test-youtube.js",
+    "dev": "nodemon --exec node main.js",
+    "start": "node main.js",
+    "test-youtube": "node test-youtube.js"
+  },
+  "dependencies": {
+    "@distube/ytdl-core": "^4.16.12",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "fs": "^0.0.1-security",
+    "helmet": "^7.1.0",
+    "node-cache": "^5.1.2",
+    "path": "^0.12.7",
+    "spotify-web-api-node": "^5.0.2",
+    "youtube-dl-exec": "^2.5.8",
+    "youtubei": "^1.0.1",
+    "ytdl-core": "^4.11.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
