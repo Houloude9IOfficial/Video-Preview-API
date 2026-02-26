@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const projectRoot = path.join(__dirname, '..');
 
-export const PORT = process.env.PORT || 3001;
+export const PORT = process.env.PORT || 3000;
 export const CACHE_TTL = 3600;
 export const MAX_CACHE_SIZE = 500;
 export const VIDEO_DURATION = 7;
