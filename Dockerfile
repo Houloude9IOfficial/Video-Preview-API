@@ -4,7 +4,7 @@ FROM node:20-bookworm-slim AS builder
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm ci --omit=dev
+RUN YOUTUBE_DL_SKIP_PYTHON_CHECK=1 npm ci --omit=dev
 
 # ─── Stage 2: Runtime ──────────────────────────────────────────────────────────
 FROM node:20-bookworm-slim
